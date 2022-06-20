@@ -11,18 +11,27 @@ virtualenv env
 ```
 Activate virtual environment
 
-```./env/Scripts/activate```
+```
+./env/Scripts/activate
+```
 
 Install django in virtual environment
 
-```pip install django```
+```
+pip install django
+```
 
 Check the installed version
 
-```django-admin --version```
+```
+django-admin --version
+```
 
 Create new django project to work with tailwind 
-```django-admin startproject yourAppName```
+
+```
+django-admin startproject yourAppName
+```
 
 <hr>
 
@@ -32,7 +41,11 @@ Create new django project to work with tailwind
 
 Install django-tailwind
 
-`python -m pip install django-tailwind`
+```
+python -m pip install django-tailwind
+```
+
+
 
 After installing django-tailwind
 
@@ -48,7 +61,9 @@ INSTALLED_APPS = [
 
 Create a Tailwind CSS compatible Django app, I like to call it theme:
 
-``python manage.py tailwind init``
+```
+python manage.py tailwind init
+```
 
 Add your newly created `'theme'` app to `INSTALLED_APPS` in `settings.py`:
 
@@ -62,7 +77,9 @@ INSTALLED_APPS = [
 
 Register the generated `'theme'` app by adding the following line to `settings.py` file:
 
-`TAILWIND_APP_NAME = 'theme'`
+```
+TAILWIND_APP_NAME = 'theme'
+```
 
 
 
@@ -81,7 +98,9 @@ Before running below command don't forgot to add `NPM_BIN_PATH= r"C:\Program Fil
 `Note: You must have installed Node.js in your system`
 
 
-`python manage.py tailwind install`
+```
+python manage.py tailwind install
+```
 
 
 Load this commands in your `templates` base file
