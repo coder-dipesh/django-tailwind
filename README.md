@@ -1,13 +1,16 @@
 # django-tailwind setup :rocket:
 
 ### Create django app
+
 <hr>
+
 Create virtual environment
    
 ```
 virtualenv env
 ```
 Activate virtual environment
+
 ```./env/Scripts/activate```
 
 Install django in virtual environment
@@ -22,15 +25,19 @@ Create new django project to work with tailwind
 ```django-admin startproject yourAppName```
 
 <hr>
+
 ### Install `django-tailwind`
+
 <hr>
 
 Install django-tailwind
+
 `python -m pip install django-tailwind`
 
 After installing django-tailwind
 
 Add `'tailwind'` to `INSTALLED_APPS` in `settings.py`:
+
 ```
 INSTALLED_APPS = [
   # other Django apps
@@ -40,9 +47,11 @@ INSTALLED_APPS = [
 
 
 Create a Tailwind CSS compatible Django app, I like to call it theme:
+
 ``python manage.py tailwind init``
 
 Add your newly created `'theme'` app to `INSTALLED_APPS` in `settings.py`:
+
 ```
 INSTALLED_APPS = [
   # other Django apps
